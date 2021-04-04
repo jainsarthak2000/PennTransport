@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="start|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent"
+            tools:context=".MapsActivity" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:onClick="onFilterLaunchClick"
+            android:text="@string/filter"
+            map:layout_constraintBaseline_toBaselineOf="@+id/userDetails"
+            map:layout_constraintStart_toStartOf="@+id/map" />
+
+
+
+
+        <Button
+            android:id="@+id/backToPenn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_weight="1"
+            android:onClick="onOverviewButtonClick"
+            android:text="Overview"
+            map:layout_constraintBaseline_toBaselineOf="@+id/userDetails"
+            map:layout_constraintStart_toEndOf="@+id/userDetails" />
+
+        <Button
+            android:id="@+id/userDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_weight="1"
+            android:onClick="onUserButtonClick"
+            android:text="User"
+            map:layout_constraintStart_toEndOf="@+id/button2"
+            map:layout_constraintTop_toTopOf="@+id/map" />
+
+        <Button
+            android:id="@+id/navigateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_weight="1"
+            android:onClick="onNavigateButtonClick"
+            android:text="Navigation"
+            map:layout_constraintBaseline_toBaselineOf="@+id/backToPenn"
+            map:layout_constraintStart_toEndOf="@+id/backToPenn" />
+
+        <Button
+        android:id="@+id/sos"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="7dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="onSOSClick"
+        android:text="@string/sos"
+        android:textColor="@android:color/white"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/report"
+            android:layout_width="89dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginEnd="320dp"
+            android:layout_marginBottom="24dp"
+            android:layout_weight="1"
+            android:text="Report"
+            android:onClick="onReportButtonClick"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+

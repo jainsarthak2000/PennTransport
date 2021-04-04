@@ -1,0 +1,50 @@
+<h1 class="mt-4">UserManagement</h1>
+<p class="lead mb-3"></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+
+<body>
+    <div class="container">
+      <h1 id="userTable"></h1>
+      <!-- <p>Students Firebase 101:</p> -->
+      <table class="table table-striped" id="table1">
+    		<thead>
+    			<tr>
+    				<th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Mobile</th>
+                    <th>Emergency Mobile</th>
+                  
+                    
+          </tr>
+          <% for(var i = 0; i < firstName.length; i++) { %>
+            <tr>       
+              <td><%= firstName[i]%></td>
+              <td><%= lastName[i]%></td>  
+              <td><%= email[i]%></td>   
+              <td><%= password[i]%></td> 
+              <td><%= mobile[i]%></td>
+              <td><%= emergencyMobile[i]%></td>
+              
+            </tr>
+          <% } %>  
+
+
+
+        
+    		</thead>
+    		<tbody>
+    		</body>
+    	</table> 
+    </div>
+    <script src="firebase.js"></script>
+  </body>
+
+<a href="/dashboard" class="btn btn-secondary">Back</a>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>

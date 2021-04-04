@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "532707261890",
+    "firebase_url": "https://cis350s20-22.firebaseio.com",
+    "project_id": "cis350s20-22",
+    "storage_bucket": "cis350s20-22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532707261890:android:7706b1bfd3ff3751f9ea5b",
+        "android_client_info": {
+          "package_name": "edu.upenn.cis350.penntransport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532707261890-140g5huqpve86nnbpq95o1obunqfajna.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.upenn.cis350.penntransport",
+            "certificate_hash": "d79c1c298181e672058de66bd6d38507d7e490d7"
+          }
+        },
+        {
+          "client_id": "532707261890-f2lr1tk921lccu9n8a0kmi3callbh5s7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.upenn.cis350.penntransport",
+            "certificate_hash": "839dad338b652d5822279871e6515903193b0a3d"
+          }
+        },
+        {
+          "client_id": "532707261890-9i7l1216qgqpcif6ha2l0dbm03ffd95k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzxcjKUMV7LyocfKCaQigzGYG-pLZy2pM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532707261890-9i7l1216qgqpcif6ha2l0dbm03ffd95k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

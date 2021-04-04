@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PennTransport</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="email">Penn Email</string>
+    <string name="mobileNumber">Mobile Number (Digits only)</string>
+    <string name="location">Location</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="createAccount">Create Account</string>
+    <string name="signup">Sign Up</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="personal">Personal Details</string>
+    <string name="loginInfo">Login Information</string>
+    <string name="emergencyInfo">Emergency Contact Information</string>
+    <string name="registerUrl">http://localhost:3000/create</string>
+    <string name="sos">SOS</string>
+    <string name="confirmEmergency">Confirm Emergency</string>
+    <string name="confirmSendSOSText">A text will be sent to your emergency contact.</string>
+    <string name="filter">Filter</string>
+    <string name="textSOS">SOS</string>
+    <string name="cancel">Cancel</string>
+    <string name="spinnerInfo" />
+    <string name="title_activity_maps2">Map</string>
+
+
+</resources>

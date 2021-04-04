@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    tools:context=".ReportActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="410dp"
+        android:layout_height="706dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="146dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482">
+
+        <TextView
+            android:id="@+id/reportCommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Report your problem here"
+            android:textColor="@color/colorInputL"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/nameReport"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textbox_back"
+            android:padding="5dp"
+            android:text=" Name:"
+            android:textColor="@color/colorInputL"
+            android:textColorHint="@color/colorHintL"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/usernameReport"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textbox_back"
+            android:padding="5dp"
+            android:text=" Email id:"
+            android:textColor="@color/colorInputL"
+            android:textColorHint="@color/colorHintL"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="Select Origin:"
+            android:textColor="@color/colorInputL"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/originReportSpinner"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/textbox_back"
+            android:entries="@array/spinnerInfo"
+            android:textColor="@color/colorInputL"
+            android:textColorHint="@color/colorHintL"
+            android:textSize="15sp" />
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="1dp"-->
+        <!--            android:padding="5dp"-->
+        <!--            android:text="Select Destination:"-->
+        <!--            android:textColor="@color/colorInputL"-->
+        <!--            android:textSize="15sp" />-->
+
+        <!--        <Spinner-->
+        <!--            android:id="@+id/destinationSpinner"-->
+        <!--            android:layout_width="330dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_marginEnd="10dp"-->
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            android:background="@drawable/textbox_back"-->
+        <!--            android:entries="@array/spinnerInfo"-->
+        <!--            android:textColor="@color/colorInputL"-->
+        <!--            android:textColorHint="@color/colorHintL"-->
+        <!--            android:textSize="15sp" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="5dp"
+            android:text="Select Bus Route:"
+            android:textColor="@color/colorInputL"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/busRouteReportSpinner"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/textbox_back"
+            android:entries="@array/routeInfo"
+            android:textColor="@color/colorInputL"
+            android:textColorHint="@color/colorHintL"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="1dp"
+            android:text="Pick date and time:"
+            android:textColor="@color/colorInputL"
+            android:textSize="15sp" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:descendantFocusability="blocksDescendants"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="1dp">
+
+            <Button
+                android:id="@+id/dateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textbox_back"
+                android:padding="5dp"
+                android:text="Select Date"
+                android:textColor="@color/colorInputL"
+                android:textColorHint="@color/colorHintL"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="165dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textbox_back"
+                android:hint="  MM-DD-YYYY"
+                android:padding="5dp"
+                android:textColor="@color/colorInputL"
+                android:textColorHint="@color/colorHintL"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:descendantFocusability="blocksDescendants"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="1dp">
+
+            <Button
+                android:id="@+id/timeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textbox_back"
+                android:padding="5dp"
+                android:text="Select Time"
+                android:textColor="@color/colorInputL"
+                android:textColorHint="@color/colorHintL"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="165dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textbox_back"
+                android:hint="  MM-DD-YYYY"
+                android:padding="5dp"
+                android:textColor="@color/colorInputL"
+                android:textColorHint="@color/colorHintL"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="Please describe your problem here:"
+            android:textColor="@color/colorInputL"
+            android:textSize="15sp" />
+
+        <ScrollView
+            android:layout_width="400dp"
+            android:layout_height="70dp">
+
+            <EditText
+                android:id="@+id/problem"
+                android:layout_width="330dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top | center"
+                android:background="@color/colorTextBoxBackL"
+                android:gravity="center_vertical"
+                android:hint="Problem Description"
+                android:padding="5dp"
+                android:textColor="@color/colorInputL"
+                android:textColorHint="@color/colorHintL"
+                android:textSize="15sp" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/loginbutton_back"
+            android:padding="3dp"
+            android:onClick="onReportSubmitButtonClick"
+            android:text="Submit"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

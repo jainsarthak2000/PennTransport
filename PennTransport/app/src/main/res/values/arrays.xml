@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinnerInfo">
+        <item>Select Location</item>
+        <item>David Rittenhouse Labs (DRL)</item>
+        <item>Franklin\'s Table</item>
+        <item>Penn Bookstore</item>
+        <item>Schattner Building (Dental School)</item>
+        <item>Pottruck Gym</item>
+        <item>The Quad</item>
+        <item>Presbyterian Medical Center</item>
+        <item>33rd St. &amp; Spruce St.</item>
+        <item>33rd St. &amp; Walnut St.</item>
+        <item>30th St. &amp; JFK Blvd. (arrive)</item>
+        <item>34th St. &amp; Market St.</item>
+<!--        <item>34th St and Chestnut St</item>-->
+<!--        <item>34th St and Walnut St</item>-->
+<!--        <item>37th St and Market St</item>-->
+        <item>38th St. &amp; Spruce St.</item>
+        <item>40th St. &amp; Walnut St. (UPenn)</item>
+<!--        <item>40th St and Chestnut St</item>-->
+
+    </string-array>
+
+    <string-array name="routeInfo">
+        <item>Select Bus</item>
+        <item>Lucy Green Loop</item>
+        <item>Lucy Gold Loop</item>
+        <item>Penn Bus East</item>
+        <item>Penn Bus West</item>
+    </string-array>
+
+
+
+</resources>
